@@ -5873,19 +5873,6 @@ else
 	Fluent = Library
 end
 
-local ToggleLib;
-if game:GetService("CoreGui") and game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame:FindFirstChild("ChatIcon") and not game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame:FindFirstChild("LibToggle") then
-	ToggleLib = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.ChatIcon:Clone()
-	ToggleLib.Parent = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame
-	ToggleLib.Name = "LibToggle"
-
-	if ToggleLib:FindFirstChild("BadgeContainer") then
-		ToggleLib.BadgeContainer:Destroy()
-	end
-else
-	ToggleLib = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame:FindFirstChild("LibToggle")
-end
-
 if ToggleLib then
 	local Background = ToggleLib.Background
 	Background.Icon.Image = "rbxassetid://9886659671"
