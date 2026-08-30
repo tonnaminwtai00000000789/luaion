@@ -26717,7 +26717,7 @@ New=a.load'p'.New
 return[[
 {
     "name": "windui",
-    "version": "1.6.66",
+    "version": "Xozia",
     "main": "./dist/main.lua",
     "repository": "https://github.com/Footagesus/WindUI",
     "discord": "https://discord.gg/ftgs-development-hub-1300692552005189632",
